@@ -19,6 +19,10 @@
             <id>bintray-ivanyu-bintray-hello-world-repo</id>
             <url>https://dl.bintray.com/xudafeng/maven/</url>
         </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
     </repositories>
 
 
@@ -29,9 +33,9 @@
             <version>2.12.6</version>
         </dependency>
         <dependency>
-            <groupId>io.appium</groupId>
+            <groupId>com.github.appium</groupId>
             <artifactId>java-client</artifactId>
-            <version>6.1.0</version>
+            <version>v7.0.0</version>
         </dependency>
 
         <dependency>

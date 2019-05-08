@@ -1,12 +1,16 @@
-tessdata
-========
+### 更新
 
-These language data files only work with Tesseract 4.
-They are based on the sources in
-[tesseract-ocr/langdata](https://github.com/tesseract-ocr/langdata) on GitHub.
+原AppCrawler只支持1.8版本，替换java-client:7.0之后，可以
+支持到最新版本的appium
 
-Get language data files for Tesseract 3.04 or 3.05 from the
-[3.04 tree](https://github.com/tesseract-ocr/tessdata/tree/3.04.00).
+### 打包
 
-More information and a complete list of all languages is available in the
-[Tesseract wiki](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files).
+```shell
+mvn assembly:assembly
+```
+
+### 测试
+
+```shell
+java -jar target/appcrawler-2.4.0-jar-with-dependencies.jar -a ApiDemos-debug.apk
+```
